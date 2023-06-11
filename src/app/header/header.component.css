@@ -1,0 +1,41 @@
+a.active {
+  color: red;
+}
+
+.container-fluid {
+  background-color: white;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  --bs-navbar-padding-y: 0rem;
+}
+
+a {
+  color: hsl(0, 1%, 34%);
+}
+
+.nav-item {
+  position: relative;
+}
+
+
+
+.nav .nav-item {
+  margin-left: 60px;
+  font-size: 25px;
+}
+
+.nav .nav-item:hover .nav-link {
+  color: rgba(255, 0, 0, 0.323);
+
+}
+
+picture caption {
+  text-align: center;
+}

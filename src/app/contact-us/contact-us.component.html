@@ -1,0 +1,67 @@
+<div class="row">
+    <div class="col-6">
+
+        <div class="address">
+            <mat-icon> place</mat-icon>
+            Plot no C12/1 NICE INDUSTRIAL AREA,
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MIDC, Satpur Colony,
+            Nashik,<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Maharashtra 422007
+        </div>
+
+        <!--Google map-->
+        <div id="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.157947304296!2d73.74608327489926!3d20.00188458140277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeba056adaae5%3A0x7b1432e3023bcb8a!2sCNC%20Academy!5e0!3m2!1sen!2sin!4v1686310104824!5m2!1sen!2sin"
+                frameborder="0" style="border: 0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card" style="width: 28rem">
+            <div class="card-body">
+                <h5 class="card-title">Message Us</h5>
+                <br />
+                <form #contactUsForm="ngForm"
+                    action="https://formsubmit.co/vdjontrack@gmail.com"
+                    method="POST" #Form>
+                    <div class="example-full-width">
+                        <mat-form-field style="width: 20rem">
+                            <mat-label>Full Name</mat-label>
+                            <input matInput name="name" placeholder="Enter Name"
+                                ngModel required #name="ngModel" />
+                        </mat-form-field>
+                        <mat-error *ngIf="name.touched && name.invalid">
+                            <span>Name is required.</span>
+                        </mat-error>
+                    </div>
+                    <br />
+                    <div class="example-full-width">
+                        <mat-form-field style="width: 20rem">
+                            <mat-label>Email</mat-label>
+                            <input matInput name="Email" type="email"
+                                placeholder="Enter Email" ngModel required
+                                #email="ngModel" />
+                        </mat-form-field>
+                        <mat-error *ngIf="email.touched && email.invalid">
+                            Email is invalid.
+                        </mat-error>
+                    </div>
+                    <br />
+                    <mat-form-field style="width: 20rem">
+                        <mat-label>Message</mat-label>
+                        <textarea matInput placeholder="Enter Message"
+                            name="Message">
+                        </textarea>
+                    </mat-form-field>
+
+                    <button mat-button [disabled]="contactUsForm.invalid"
+                        type="submit" value="Submit"
+                        (click)="Form.submit()">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

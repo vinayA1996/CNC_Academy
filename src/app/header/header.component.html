@@ -1,0 +1,42 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light-red mb-3">
+    <div class="container-fluid">
+        <picture class="mx-3">
+            <img class="mx-4" src="assets/logo.png" alt="logo" width="80px"
+                height="80px">
+            <span><h5 style="color: red">CNC Academy</h5></span>
+        </picture>
+        <button class="navbar-toggler" type="button"
+            (click)="isMenuCollapsed = !isMenuCollapsed">&#9776;</button>
+
+        <div [ngbCollapse]="isMenuCollapsed"
+            class="collapse navbar-collapse">
+            <div class="container">
+                <header
+                    class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+
+                    <ul class="nav">
+                        <li class="nav-item"><a routerLink="/home"
+                                class="nav-link "
+                                [ngClass]="{'active': menu=='/home'}"
+                                aria-current="home">Home</a></li>
+                        <li class="nav-item"><a
+                                [ngClass]="{'active': menu=='/contact'}"
+                                routerLink="/contact"
+                                class="nav-link">Contact Us</a></li>
+
+                        <li class="nav-item"><a
+                                [ngClass]="{'active': menu=='/about'}"
+                                routerLink="/about" class="nav-link">About</a></li>
+                        <li class="nav-item" (click)="scrollToTop()"><a
+                                [ngClass]="{'active': menu=='/c'}"
+                                routerLink="/home" class="nav-link">Cources</a></li>
+                    </ul>
+
+                </header>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>

@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    /* background-image: url('assets/bg-2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%; */
+    background-color: #FBFAFA;
+}
+
+
+html,
+body {
+    height: 100%;
+    padding-top: 60px;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        padding-top: 300px;
+        background-color: lightgreen;
+    }
+}
