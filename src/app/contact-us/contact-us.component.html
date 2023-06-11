@@ -1,24 +1,79 @@
-<div class="row">
-    <div class="col-6">
+<div class=" row">
+    <div class="col-md-8 mx-5 mx-md-0">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mx-4" style="width: 25rem; height: 25rem;">
+                    <div>
+                        <h3 class=" px-5 py-4">
+                            Get in touch..
+                        </h3>
+                    </div>
+                    <div class="address py-3">
+                        <mat-icon class> place</mat-icon>
+                        Plot no C12/1 NICE INDUSTRIAL AREA,
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MIDC, Satpur
+                        Colony,
+                        Nashik,<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Maharashtra
+                        422007
+                    </div>
 
-        <div class="address">
-            <mat-icon> place</mat-icon>
-            Plot no C12/1 NICE INDUSTRIAL AREA,
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MIDC, Satpur Colony,
-            Nashik,<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Maharashtra 422007
-        </div>
+                    <!--Google map-->
+                    <div id="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.157947304296!2d73.74608327489926!3d20.00188458140277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeba056adaae5%3A0x7b1432e3023bcb8a!2sCNC%20Academy!5e0!3m2!1sen!2sin!4v1686310104824!5m2!1sen!2sin"
+                            frameborder="0" style="border: 0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" id="talk">
+                <div class="card mx-4" style="width: 25rem; height: 25rem;">
+                    <div class="py-3">
+                        <h3 class=" px-5 py-4">
+                            Talk to us..
+                        </h3>
+                    </div>
+                    <div class=" py-2 px-4">
+                        <mat-icon class="py-1"> email
+                        </mat-icon>
+                        <span class="mx-2">
+                            <a href="mailto: cncacademynasik@gmail.com"> Mail
+                                CNC
+                                Academy</a>
+                        </span>
+                    </div>
+                    <div class=" py-2 px-4">
+                        <mat-icon class="py-1"> call
+                        </mat-icon>
+                        <span class="mx-2">
+                            <a href="tel:(+91)(9822292928)">Call CNC
+                                Academy</a>
+                        </span>
 
-        <!--Google map-->
-        <div id="map-container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.157947304296!2d73.74608327489926!3d20.00188458140277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeba056adaae5%3A0x7b1432e3023bcb8a!2sCNC%20Academy!5e0!3m2!1sen!2sin!4v1686310104824!5m2!1sen!2sin"
-                frameborder="0" style="border: 0" allowfullscreen></iframe>
+                    </div>
+                    <div class="smedia">
+                        <ul class="d-flex my-5">
+                            <li id="m" class="mx-4"> <i
+                                    class="fa-brands fa-facebook fa-fade fa-2xl"></i></li>
+                            <li id="m"><i
+                                    class="fa-brands fa-instagram fa-fade fa-2xl"></i></li>
+                            <li id="m" class="mx-4">
+
+                                <i class="fa-brands fa-twitter fa-fade fa-2xl"></i>
+                            </li>
+                            <li id="m">
+                                <i class="fa-solid fa-envelope fa-fade fa-2xl"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-    <div class="col-6">
-        <div class="card" style="width: 28rem">
+    <div class="col-md-4 mx-5 mx-md-0 ">
+        <div class="card" style="width: 28rem ;height: auto;">
             <div class="card-body">
                 <h5 class="card-title">Message Us</h5>
                 <br />
@@ -47,6 +102,17 @@
                             Email is invalid.
                         </mat-error>
                     </div>
+                    <div class="example-full-width">
+                        <mat-form-field style="width: 20rem">
+                            <mat-label>Phone No</mat-label>
+                            <input matInput name="mob" type="text"
+                                placeholder="Enter phone no." ngModel required
+                                #mob="ngModel" />
+                        </mat-form-field>
+                        <mat-error *ngIf="mob.touched && mob.invalid">
+                            phone is invalid.
+                        </mat-error>
+                    </div>
                     <br />
                     <mat-form-field style="width: 20rem">
                         <mat-label>Message</mat-label>
@@ -65,3 +131,4 @@
         </div>
     </div>
 </div>
+<app-footer></app-footer>

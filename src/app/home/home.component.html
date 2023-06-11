@@ -1,17 +1,15 @@
-<!-- <div class="bg">
-    <img src="assets/bg-red.png" alt>
-</div> -->
+
 <div class="element-to-animate">
     <div style="margin-top: 70px">
-        <div class="contain">
-            <div class="title">
+        <div class="row contain">
+            <div class="title col-md-6 mx-5 mx-md-0">
                 <h1>
                     {{ "CNC Academy" | uppercase }}
                 </h1>
                 <h4>CNC Programming | CNC Operating</h4>
             </div>
 
-            <div class="cncimg">
+            <div class="cncimg col-md-6 mx-5 mx-md-0">
                 <ngb-carousel *ngIf="images">
                     <ng-template ngbSlide>
                         <div class="picsum-img-wrapper">
@@ -53,7 +51,12 @@
 
     <!--Google Maps-->
 
-    <body></body>
+    <body>
+        <div>
+
+        </div>
+
+    </body>
     <app-footer></app-footer>
 
     <app-scroll-to-top></app-scroll-to-top>

@@ -14,6 +14,7 @@ a.active {
   top: 0;
   width: 100%;
   --bs-navbar-padding-y: 0rem;
+  z-index: 9999;
 }
 
 a {
