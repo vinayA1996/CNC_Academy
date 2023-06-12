@@ -30,4 +30,7 @@ export class HeaderComponent implements OnInit {
   scrollToTop() {
     window.scrollTo({ top: 800, behavior: 'smooth' });
   }
+  scroll() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

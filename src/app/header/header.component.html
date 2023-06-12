@@ -16,7 +16,8 @@
                     class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
 
                     <ul class="nav">
-                        <li class="nav-item"><a routerLink="/home"
+                        <li class="nav-item" (click)="scroll()"><a
+                                routerLink="/home"
                                 class="nav-link "
                                 [ngClass]="{'active': menu=='/home'}"
                                 aria-current="home">Home</a></li>

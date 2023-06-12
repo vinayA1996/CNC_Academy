@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "cnc-academy-b0e35"
+  },
+  "targets": {
+    "cnc-academy-b0e35": {
+      "hosting": {
+        "cnc-academy": [
+          "cnc-academy-b0e35"
+        ]
+      }
+    }
+  }
+}
