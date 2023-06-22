@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class CourseService {
-  baseUrl: string = 'https://cnc-academy2.onrender.com/course';
+  baseUrl: string = 'https://cnc-academy.onrender.com/course';
   constructor(private http: HttpClient) {}
 
   getCourses() {
