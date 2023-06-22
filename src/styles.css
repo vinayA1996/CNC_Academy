@@ -1,28 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-    /* background-image: url('assets/bg-2.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 100%; */
-    background-color: #FBFAFA;
-}
+
 
 
 html,
 body {
-    height: 100%;
     padding-top: 60px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/bg-red.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    size: auto;
+    z-index: -1;
+}
+
+.content {
+    /* Your component styles here */
+    /* Make sure the z-index is higher than the background */
+    z-index: 1;
+}
+
+
+i {
+    color: red;
+    margin-left: 2px;
 }
 
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-}
 
-@media screen and (max-width: 720px) {
-    body {
-        padding-top: 300px;
-        background-color: lightgreen;
-    }
 }

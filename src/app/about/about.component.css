@@ -1,0 +1,41 @@
+/* about.component.scss */
+:host {
+    animation: display 1s ease-in-out;
+}
+
+@keyframes display {
+    from {
+        transform: translateY(-10%);
+        opacity: 0.1;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+.about {
+    padding: 50px 0;
+
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.machine-list {
+    list-style-type: disc;
+    margin-left: 20px;
+}

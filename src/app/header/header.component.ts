@@ -33,4 +33,7 @@ export class HeaderComponent implements OnInit {
   scroll() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+  closeMenu() {
+    this.isMenuCollapsed = true;
+  }
 }
